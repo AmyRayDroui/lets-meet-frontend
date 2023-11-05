@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-color: $app-bg;
+    color:$primary-text-color;
+    font-size: 16px;
+    font-family: monsterrat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

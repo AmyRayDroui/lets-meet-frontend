@@ -1,0 +1,27 @@
+.app-header {
+
+    background: $header-bg;
+
+    * {
+        padding-inline: rem(10px);
+        padding-block: rem(6px);
+    }
+
+    a:not(.title){
+        display: inline-block;
+        font-size: $link-font-size;
+        font-weight: 500;
+        transition: all 100ms ease-in-out;
+
+        &:hover {
+            color: lighten($primary-text-color, 20%);
+            transform: scale(1.05);
+        }
+    }
+
+    li {
+        .router-link-active {
+            color: $primary-text-active-color;
+        }
+    }
+}
