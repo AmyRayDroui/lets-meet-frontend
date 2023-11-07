@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: $app-bg;
+    color: $primary-text-color;
+    font-size: 16px;
+    font-family: monsterrat;
+}
+
+button {
+    min-height: 2rem;
+    font-size: 1.1rem;
+    padding: .5rem;
+    padding-inline: 1rem;
+    border: 0;
+    color: $light-text-color;
+    border-radius: $dynamic-modal-border-radius;
+    background: $button-confirm-bg;
+    box-shadow: 3px 3px #000;
+    transition: 100ms ease-in-out;
+
+    &:active {
+        transform: translate(3px, 3px);
+        box-shadow: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
