@@ -3,17 +3,19 @@
     <h2>Welcome to let's meet</h2>
     <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos libero harum suscipit voluptatum fugiat quia
       sed esse facere doloremque eaque?</h3>
+    <button @click="signUp">Sign Up</button>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+const { $bus }: any = useNuxtApp()
+import { onMounted } from 'vue'
+//Components
+const SignUp = resolveComponent('SignUp')
 
-export default defineComponent({
-  setup() {
+onMounted(() => { signUp() })
 
-
-    return {}
-  }
-})
+const signUp = () => {
+  $bus.$emit('signUp', { isOpen: true, component: SignUp })
+}
 </script>

@@ -1,0 +1,36 @@
+.dynamic-modal-backdrop {
+    position: absolute;
+    background: opacify($color: rgba(#e31414, .3), $amount: 0);
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dynamic-modal {
+    position: absolute;
+    background: $header-bg;
+    border-radius: $dynamic-modal-border-radius;
+    box-shadow: #000 10px 10px 10px;
+    top: calc(50% - 20%);
+    left: calc(50% - 20%);
+    width: 40%;
+    height: 40%;
+    padding: 1rem;
+    z-index: 3;
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+        input[type='password'],
+        input[type='email'] {
+            height: 2rem;
+            border-radius: 6px;
+            border: none;
+        }
+
+        button {
+            grid-column: 1 / -1;
+        }
+    }
+}
