@@ -10,12 +10,10 @@
 <script setup lang="ts">
 const { $bus }: any = useNuxtApp()
 import { onMounted } from 'vue'
-//Components
-const SignUp = resolveComponent('SignUp')
 
 onMounted(() => { signUp() })
 
 const signUp = () => {
-  $bus.$emit('signUp', { isOpen: true, component: SignUp })
+  $bus.$emit('signUp', { isOpen: true, component: 'SignUp' })
 }
 </script>

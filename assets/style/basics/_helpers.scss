@@ -76,3 +76,16 @@
         display: inline;
     }
 }
+
+//Button
+.button-as-link {
+    cursor: pointer;
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+    color: $primary-text-active-color;
+    padding: 0;
+    text-decoration: underline;
+    font-size: .8rem;
+    z-index: 41;
+}
